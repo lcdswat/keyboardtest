@@ -1,0 +1,113 @@
+body {
+	background-color: #A85858;
+	margin: 0;
+	padding: 100px 100px 0 100px;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+.clean {clear: both;}
+.fleft {float: left;}
+.fright {float: right;}
+
+use {
+	transition: fill ease 0.2s;
+}
+
+use.pressed {
+	fill: white;
+}
+
+use.pressed-key {
+	fill: gray;
+}
+
+svg {
+	display: block;
+	width: 100%;
+	max-width: 1338px;
+}
+
+#out {
+	font-size: 140px;
+	font-weight: 100;
+}
+
+#cursor {
+	display: block;
+	float: right;
+	text-align: right;
+}
+
+h1 {
+	display: block;
+	margin: 0;
+	padding: 0 0 120px 0;
+	font-weight: 900;
+	font-size: 64px;
+	float: left;
+}
+
+#stay-pressed {
+	display: inline-block;
+	margin: 0;
+	padding: 60px 20px 120px 0;
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 54px;
+	height: 28px;
+	top: 4px;
+}
+
+.switch input {display:none;}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-transition: .4s;
+	transition: .4s;
+	border: 2px solid white;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 20px;
+	width: 20px;
+	left: 2px;
+	bottom: 2px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider {
+	background-color: #42CA99;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #42CA99;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+.slider.round {
+	border-radius: 28px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
