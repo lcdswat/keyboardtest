@@ -6,6 +6,34 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+a {
+	color: white;
+	text-decoration: none;
+	border-bottom: 1px solid white;
+	padding: 0 0 3px 0;
+}
+
+p {
+	max-width: 500px;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0;
+	padding: 0 0 40px 0;
+}
+
+h2 {
+	font-size: 24px;
+	margin: 0;
+	padding: 0 0 10px 0;
+}
+
+#back-to {
+	display: inline-block;
+	font-size: 18px;
+	clear: both;
+	margin: 0 0 50px 0;
+}
+
 #preloader {
 	width: 100%;
 	height: 100%;
@@ -13,9 +41,18 @@ body {
 	position: fixed;
 	margin: -100px;
 	z-index: 999;
-	background-image: url(/site-files/preloader.svg);
+	background-image: url(preloader.svg);
 	background-repeat: no-repeat;
 	background-position: center center;
+}
+
+#super-separator {
+	width: 70px;
+	height: 5px;
+	background-color: white;
+	position: relative;
+	left: -35px;
+	bottom: 65px;
 }
 
 #load-up {
@@ -41,6 +78,7 @@ body {
 .clean {clear: both;}
 .fleft {float: left;}
 .fright {float: right;}
+.fnon {float: none;}
 
 h1 {
 	display: block;
@@ -227,9 +265,26 @@ input:checked + .slider:before {
 	border: 1px solid white;
 }
 
+#about-keyboard-one {
+	width: 355px;
+	height: 1338px;
+	background-image: url(A1243-vert.svg);
+	background-position: center center;
+	position: absolute;
+	left: 762px;
+	top: 100px;
+}
 
+#about-keyboard-two {
+	width: 389px;
+	height: 1338px;
+	background-image: url(Generic-PC-vert.svg);
+	background-position: center center;
+	position: absolute;
+	left: 1370px;
+	top: -640px;
+}
 
-
-
-
-
+#about-keyboard-three {
+	
+}
