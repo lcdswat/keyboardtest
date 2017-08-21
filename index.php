@@ -13,7 +13,7 @@
 <!-- <div id="preloader"></div> -->
 
 <div id="load-up">
-	<h1><a href="/">Online<br>keyboard test</a></h1>
+	<h1>Online<br>keyboard test</h1>
 
 	<span id="keys-frame">
 		Press any key<br><br>
